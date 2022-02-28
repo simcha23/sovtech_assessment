@@ -1,0 +1,12 @@
+<div class="home">
+    <div class="cat">
+        <ul>
+            <li *ngFor="let category of categories">
+                <a [routerLink]="['category', category]">{{ category }}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="details">
+        <router-outlet></router-outlet>
+    </div>
+</div>
